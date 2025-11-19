@@ -1,0 +1,113 @@
+.navegador {
+  display: flex;
+  height: 87px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  position: relative;
+  background-color: #cd4433;
+}
+
+.navegador .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.navegador .vector {
+  position: relative;
+  width: 31.26px;
+  height: 29px;
+}
+
+.navegador .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Epilogue-Black", Helvetica;
+  font-weight: 900;
+  color: #f9fafa;
+  font-size: 32px;
+  letter-spacing: 0.96px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.navegador .menu {
+  display: inline-flex;
+  align-items: center;
+  gap: 54px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.navegador .navbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.navegador .div {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Epilogue-Medium", Helvetica;
+  font-weight: 500;
+  color: #f9fafa;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.21px;
+  line-height: normal;
+  white-space: nowrap;
+}
+/* Original CSS code should be injected here */
+
+.navegador .text-wrapper {
+  display: block;
+}
+
+.navegador .navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegador .div a {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
+  font-family: "Epilogue-Medium", Helvetica;
+  font-weight: 500;
+  color: #f9fafa;
+  font-size: 21px;
+  text-align: center;
+  letter-spacing: 0.21px;
+  line-height: normal;
+  white-space: nowrap;
+  text-decoration: none;
+  display: block;
+  transition: opacity 0.2s ease;
+}
+
+.navegador .div a:hover {
+  opacity: 0.8;
+}
+
+.navegador .div a:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+.navegador .div a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.navegador .div a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
