@@ -1,0 +1,211 @@
+/*SECCIÓN PRINCIPAL DE CATEGORÍAS*/
+
+.section-category {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 24px;
+  padding: 80px 60px;
+  background-color: var(--white);
+  flex-wrap: wrap;
+}
+
+/* Banner grande izquierdo */
+.section-category .category-banner {
+  position: relative;
+  width: 424px;
+  height: 424px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section-category .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Botones */
+.section-category .button,
+.section-category .placeholder-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 40px;
+  background-color: var(--grey-600);
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.section-category .button {
+  top: calc(100% - 60px);
+  left: 24px;
+}
+
+.section-category .placeholder-wrapper {
+  top: calc(100% - 60px);
+  left: 24px;
+}
+
+.section-category .placeholder {
+  font-family: var(--body-small-semibold-font-family);
+  font-weight: var(--body-small-semibold-font-weight);
+  color: #ffffff;
+  font-size: 900;
+  white-space: nowrap;
+}
+
+/* Columna central */
+.section-category .frame {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 536px;
+}
+
+/* Fila de arriba */
+.section-category .div {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Banner mediano (312x200) */
+.section-category .category-banner-2 {
+  width: 312px;
+  height: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-category .img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Banner pequeño (200x200) */
+.section-category .category-banner-3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-category .image-2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Banner horizontal grande */
+.section-category .category-banner-4 {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-category .image-3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Banner vertical derecho */
+.section-category .category-banner-5 {
+  width: 312px;
+  height: 424px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-category .image-4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* EFECTOS */
+
+.category-banner:hover img,
+.category-banner-2:hover img,
+.category-banner-3:hover img,
+.category-banner-4:hover img,
+.category-banner-5:hover img {
+  transform: scale(1.05);
+  transition: 0.4s ease;
+}
+
+.button:hover,
+.placeholder-wrapper:hover {
+  transform: scale(1.1);
+  background-color: var(--grey-700);
+  transition: 0.25s ease;
+}
+
+/* Oscurecedor ligero */
+.category-banner::after,
+.category-banner-2::after,
+.category-banner-3::after,
+.category-banner-4::after,
+.category-banner-5::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
+  z-index: 1;
+}
+
+/* Asegura que el botón quede encima del oscurecedor */
+.button, .placeholder-wrapper { z-index: 2; }
+
+/* RESPONSIVE*/
+
+@media (max-width: 1024px) {
+  .section-category {
+    flex-wrap: wrap;
+  }
+
+  .section-category .frame {
+    width: 100%;
+  }
+
+  .section-category .category-banner,
+  .section-category .category-banner-5 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-category {
+    padding: 40px 20px;
+  }
+
+  .section-category .div {
+    flex-direction: column;
+  }
+
+  .section-category .category-banner-2,
+  .section-category .category-banner-3,
+  .section-category .category-banner-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-category .button,
+  .section-category .placeholder-wrapper {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+}
+
