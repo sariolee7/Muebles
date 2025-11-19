@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+
+  --color-primario: #cd4433;      /* rojo */
+  --color-secundario: #f9fafa;    /* blanco suave */
+  --color-texto: #333333;         /* gris texto general */
+  --color-fondo: #ffffff;         /* fondo principal */
+
+  /* Tipografías */
+  --fuente-titulo: "Epilogue-Black", Helvetica, sans-serif;
+  --fuente-texto: "Epilogue-Medium", Helvetica, sans-serif;
+
+  /* Espaciados */
+  --seccion-padding: 70px;
+  /* Max widths */
+  --max-contenedor: 1200px;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: var(--fuente-texto);
+  line-height: 1.5;
+}
+/* Contenedor general */
+.inicio {
+  width: 100%;
+  display: block;
+  background-color: var(--color-fondo);
+  overflow-x: hidden;
+}
+/* Contenedor centrado */
+.contenedor {
+  width: 100%;
+  max-width: var(--max-contenedor);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* Títulos y textos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulo);
+  color: var(--color-primario);
+}
+p {
+  font-family: var(--fuente-texto);
+  font-size: 18px;
+  color: var(--color-texto);
+}
+/* Botón general */
+.boton {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.boton:hover {
+  background-color: #b53c2c;
+}
+
+/*  RESPONSIVE */
+
+/* TABLET */
+@media (max-width: 1024px) {
+  :root {
+    --seccion-padding: 60px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .contenedor {
+    padding: 0 16px;
+  }
+}
+
+/* MÓVIL GRANDE */
+@media (max-width: 768px) {
+  :root {
+    --seccion-padding: 50px;
+  }
+  body {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .contenedor {
+    padding: 0 14px;
+  }
+}
+
+/* MÓVIL PEQUEÑO */
+@media (max-width: 480px) {
+  :root {
+    --seccion-padding: 40px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 15px;
+  }
+  .contenedor {
+    padding: 0 12px;
+  }
+}
