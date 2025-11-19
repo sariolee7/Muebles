@@ -1,30 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muebles</title>
+<html lang="es">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Diseñamos muebles que transforman espacios. Creamos piezas funcionales, modernas y duraderas para tu hogar."
+    />
+    <title>LOGO - Muebles a Medida</title>
+    <link rel="stylesheet" href="/CSS/header.css">
+    <link rel="stylesheet" href="/CSS/base.css">
+    <link rel="stylesheet" href="/CSS/banners.css">
+    <link rel="stylesheet" href="/CSS/utilities.css">
+    <link rel="stylesheet" href="/CSS/variables.css">
 
-    <link rel="stylesheet" href="/CSS/globals.css" />
-    <link rel="stylesheet" href="/CSS/style.css" />
 
-</head>
-<body>
-    
-    <header class="navegador" role="banner">
-      <div class="logo">
-        <img class="vector" src="img/vector.svg" alt="Logo de la empresa" />
-        <span class="text-wrapper">LOGO</span>
+  </head>
+  <body>
+    <div class="inicio">
+
+      <header class="navegador">
+        <div class="logo">
+          <img class="vector" src="img/vector.svg" alt="Logo icon" />
+          <span class="text-wrapper">LOGO</span>
+        </div>
+        <nav class="menu" aria-label="Main navigation">
+          <ul class="navbar">
+            <li><a href="#inicio" class="div">INICIO</a></li>
+            <li><a href="#catalogo" class="div">CATÁLOGO</a></li>
+            <li><a href="#sobre-nosotros" class="div">SOBRE NOSOTROS</a></li>
+            <li><a href="#contacto" class="div">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <img class="frame" src="img/frame-178.png" alt="Hero banner showcasing furniture collection" />
+
+    <section class="categories-section" aria-label="Product categories">
+
+    <div class="section-category">
+      <div class="category-banner">
+        <img class="image" src="/imagenes/cocina.png" />
+        <button class="button"><div class="placeholder">Cocina</div></button>
       </div>
-      <nav class="menu" role="navigation" aria-label="Navegación principal">
-        <ul class="navbar">
-          <li class="div"><a href="#inicio">INICIO</a></li>
-          <li class="div"><a href="#catalogo">CATÁLOGO</a></li>
-          <li class="div"><a href="#sobre-nosotros">SOBRE NOSOTROS</a></li>
-          <li class="div"><a href="#contacto">CONTACTO</a></li>
-        </ul>
-      </nav>
-    </header>
+      <div class="frame">
+        <div class="div">
+          <div class="category-banner-2">
+            <img class="img" src="/imagenes/comedor.png" />
+            <button class="placeholder-wrapper"><div class="placeholder">Comedor</div></button>
+          </div>
+          <div class="category-banner-3">
+            <img class="image-2" src="/imagenes/sala.png" />
+            <button class="placeholder-wrapper"><div class="placeholder">Sala</div></button>
+          </div>
+        </div>
+        <div class="category-banner-4">
+          <img class="image-3" src="/imagenes/closed.png" />
+          <button class="placeholder-wrapper"><div class="placeholder">Closed</div></button>
+        </div>
+      </div>
+      <div class="category-banner-5">
+        <img class="image-4" src="/imagenes/image.png" />
+        <button class="button"><div class="placeholder">Favoritos</div></button>
+      </div>
+    </div>
 
-</body>
+    </div>
+  </body>
 </html>
