@@ -52,11 +52,18 @@
 }
 
 .section-category .placeholder {
+  position: relative;
+  width: fit-content;
+  margin-top: -1.00px;
   font-family: var(--body-small-semibold-font-family);
   font-weight: var(--body-small-semibold-font-weight);
-  color: #ffffff;
-  font-size: 900;
+  color: var(--white);
+  font-size: var(--body-small-semibold-font-size);
+  text-align: center;
+  letter-spacing: var(--body-small-semibold-letter-spacing);
+  line-height: var(--body-small-semibold-line-height);
   white-space: nowrap;
+  font-style: var(--body-small-semibold-font-style);
 }
 
 /* Columna central */
